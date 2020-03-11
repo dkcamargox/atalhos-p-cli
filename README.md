@@ -2,7 +2,7 @@
 These are some .c files from some .exe files i created and added to my system32
 
 How to start using:
-  1 - take the .c you liked and copile it using gcc;\n
+  1 - take the .c you liked and copile it using gcc;
   2 - rename the executable generated the way you want;
   3 - add this executable to your system32 dir;
   4 - refresh your terminal;
