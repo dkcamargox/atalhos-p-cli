@@ -10,12 +10,11 @@ int main(int argc, char const *argv[]) {
 	if (getcwd(cwd, sizeof(cwd)) == NULL) { //testa se pregou o arquivo
 	   exit(1);	//se sim ele da um exit()
 	}
-	strcat(str_cli, argv[1]);	//argv[1] é o primeiro argumento passado por linha de comando colocamos ele
+	strcat(str_cli, argv[1]);	//argv[1] Ã© o primeiro argumento passado por linha de comando colocamos ele
 								//	dentro de uma string porque vai ser o nome do arquivo
-	sprintf(file_w_dir, "%s\\%s", cwd, str_cli); //concatenamos o diretório completo com o nome do arquivo
+	sprintf(file_w_dir, "%s\\%s", cwd, str_cli); //concatenamos o diretÃ³rio completo com o nome do arquivo
 	file  = fopen (file_w_dir, "at+");	//criamos esse arquivo
 	if (file == NULL) {	//testamos
-		puts("a");	
 		exit(2);	//saimos
 	}
 	puts("Done");
